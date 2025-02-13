@@ -1,1 +1,55 @@
 /* Place custom css here */
+
+/* Social Share Styles */
+.social-share {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.social-share h4 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.social-share-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--color-background-alt);
+  transition: all 0.3s ease;
+}
+
+.social-share-btn:hover {
+  transform: translateY(-2px);
+  background: var(--color-primary);
+}
+
+.social-share-btn svg {
+  width: 30px;
+  height: 30px;
+  stroke-width: 1.5;
+  fill: var(--color-text);
+}
+
+/* Social platform specific colors on hover */
+.social-share-btn.twitter:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.social-share-btn.linkedin:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.social-share-btn.facebook:hover {
+  border-bottom: 1px solid #fff;
+}

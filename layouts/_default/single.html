@@ -79,13 +79,17 @@
   </script>
   {{ end }}
 
+  {{/* Social Share */}}
+  {{ if eq .Section "posts" }}
+  {{ partial "social-share.html" . }}
+  {{ end }}
 
   {{/* Next prev controls */}}
 
   {{ if not (.Param "hidePagination") }}
   {{ partial "pagination-single.html" . }}
   {{ end }}
-
+  
   {{/* Back to top */}}
 
   {{ if not (.Param "hideBackToTop") }}
